@@ -1,71 +1,247 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-
+import Swal from 'sweetalert2'
+import 'animate.css'
 const Home: NextPage = () => {
+  const handleClick = () => {
+    Swal.fire({
+      title: '<b>1</b>',
+      icon: 'info',
+      html:
+        '<b>Waktu mengalir bagaikan air Ramadhan suci akan berakhir.</b>',
+      // showCloseButton: true,
+      // showCancelButton: true,
+      focusConfirm: false,
+      confirmButtonText: 'Lanjut'
+    }).then((result) => {
+      /* Read more about isConfirmed, isDenied below */
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: '<b>2</b>',
+          icon: 'info',
+          html:
+            '<b>Andai jemari tak sempat berjabat.</b>',
+          focusConfirm: false,
+          showClass: {
+            popup: 'animate__animated animate__fadeInDown'
+          },
+          hideClass: {
+            popup: 'animate__animated animate__fadeOutUp'
+          },
+          confirmButtonText: 'Lanjut'
+        }).then((result) => {
+          /* Read more about isConfirmed, isDenied below */
+          if (result.isConfirmed) {
+            Swal.fire({
+              title: '<b>3</b>',
+              icon: 'info',
+              html:
+                '<b>Jika raga tak bisa bersua.</b>',
+              focusConfirm: false,
+              confirmButtonText: 'Lanjut',
+              showClass: {
+                popup: 'animate__animated animate__fadeInUp'
+              },
+              hideClass: {
+                popup: 'animate__animated animate__fadeOutDown'
+              }
+            }).then((result) => {
+              /* Read more about isConfirmed, isDenied below */
+              if (result.isConfirmed) {
+                Swal.fire({
+                  title: '<b>4</b>',
+                  icon: 'info',
+                  html:
+                    '<b>Bila ada kata membekas luka.</b>',
+                  focusConfirm: false,
+                  confirmButtonText: 'Lanjut',
+                  showClass: {
+                    popup: 'animate__animated animate__bounceInLeft'
+                  },
+                  hideClass: {
+                    popup: 'animate__animated animate__bounceInRight'
+                  }
+                }).then((result) => {
+                  /* Read more about isConfirmed, isDenied below */
+                  if (result.isConfirmed) {
+                    Swal.fire({
+                      title: '<b>5</b>',
+                      icon: 'info',
+                      html:
+                        '<b>Bila ada tindakan membuat goresan di jiwa.</b>',
+                      focusConfirm: false,
+                      confirmButtonText: 'Lanjut',
+                      showClass: {
+                        popup: 'animate__animated animate__bounceInRight'
+                      },
+                      hideClass: {
+                        popup: 'animate__animated animate__bounceInLeft'
+                      }
+                    }).then((result) => {
+                      /* Read more about isConfirmed, isDenied below */
+                      if (result.isConfirmed) {
+                        Swal.fire({
+                          title: '<b>6</b>',
+                          icon: 'info',
+                          html:
+                            '<b>Sadarilah, ku juga manusia.</b>',
+                          focusConfirm: false,
+                          confirmButtonText: 'Lanjut',
+                          showClass: {
+                            popup: 'animate__animated animate__rollIn'
+                          },
+                          hideClass: {
+                            popup: 'animate__animated animate__rollOut'
+                          }
+                        }).then((result) => {
+                          /* Read more about isConfirmed, isDenied below */
+                          if (result.isConfirmed) {
+                            Swal.fire({
+                              title: '<b>7</b>',
+                              icon: 'info',
+                              html:
+                                '<b>Banyak salah dan dosa.</b>',
+                              focusConfirm: false,
+                              confirmButtonText: 'Lanjut',
+                              showClass: {
+                                popup: 'animate__animated animate__jackInTheBox'
+                              },
+                              hideClass: {
+                                popup: 'animate__animated animate__rollIn'
+                              }
+                            }).then((result) => {
+                              /* Read more about isConfirmed, isDenied below */
+                              if (result.isConfirmed) {
+                                Swal.fire({
+                                  title: '<b>8</b>',
+                                  icon: 'info',
+                                  html:
+                                    '<b>Dengan segala kerendahan hati.</b>',
+                                  focusConfirm: false,
+                                  confirmButtonText: 'Lanjut',
+                                  showClass: {
+                                    popup: 'animate__animated animate__zoomInRight'
+                                  }
+                                }).then((result) => {
+                                  /* Read more about isConfirmed, isDenied below */
+                                  if (result.isConfirmed) {
+                                    Swal.fire({
+                                      title: '<b>9</b>',
+                                      icon: 'info',
+                                      html:
+                                        '<b>Dari lisan yang tak terjaga.</b>',
+                                      focusConfirm: false,
+                                      confirmButtonText: 'Lanjut',
+                                      showClass: {
+                                        popup: 'animate__animated animate__lightSpeedInRight'
+                                      }
+                                    }).then((result) => {
+                                      /* Read more about isConfirmed, isDenied below */
+                                      if (result.isConfirmed) {
+                                        Swal.fire({
+                                          title: '<b>10</b>',
+                                          icon: 'info',
+                                          html:
+                                            '<b>Janji yang terabaikan.</b>',
+                                          focusConfirm: false,
+                                          confirmButtonText: 'Lanjut',
+                                          showClass: {
+                                            popup: 'animate__animated animate__zoomInLeft'
+                                          }
+                                        }).then((result) => {
+                                          /* Read more about isConfirmed, isDenied below */
+                                          if (result.isConfirmed) {
+                                            Swal.fire({
+                                              title: '<b>11</b>',
+                                              icon: 'info',
+                                              html:
+                                                '<b>Tingkah laku yang tidak berkenan.</b>',
+                                              focusConfirm: false,
+                                              confirmButtonText: 'Lanjut'
+                                            }).then((result) => {
+                                              /* Read more about isConfirmed, isDenied below */
+                                              if (result.isConfirmed) {
+                                                Swal.fire({
+                                                  title: '<b>12</b>',
+                                                  icon: 'info',
+                                                  html:
+                                                    '<b>Serta hati yang berprasangka.</b>',
+                                                  focusConfirm: false,
+                                                  confirmButtonText: 'Lanjut'
+                                                }).then((result) => {
+                                                  /* Read more about isConfirmed, isDenied below */
+                                                  if (result.isConfirmed) {
+                                                    Swal.fire({
+                                                      title: '<b>Saya mengucapkan</b>',
+                                                      icon: 'info',
+                                                      html:
+                                                        '<b>Selamat Hari Raya Idul Fitri</b>',
+                                                      focusConfirm: false,
+                                                      confirmButtonText: 'Lanjut',
+                                                      showClass: {
+                                                        popup: 'animate__animated animate__zoomIn'
+                                                      }
+                                                    }).then((result) => {
+                                                      /* Read more about isConfirmed, isDenied below */
+                                                      if (result.isConfirmed) {
+                                                        Swal.fire({
+                                                          title: '<b>Mohon maaf lahir dan batin.</b>',
+                                                          icon: 'info',
+                                                          html:
+                                                            '<b>Semoga Allah SWT menerima semua amal ibadah kita dan menjadikan kita kembali dalam keadaan yang suci.</b>',
+                                                          focusConfirm: false,
+                                                          confirmButtonText: 'Lanjut',
+                                                          showClass: {
+                                                            popup: 'animate__animated animate__slideInRight'
+                                                          }
+                                                        }).then((result) => {
+                                                          /* Read more about isConfirmed, isDenied below */
+                                                          if (result.isConfirmed) {
+                                                            Swal.fire({
+                                                              imageUrl: '/img/logo-modified.png',
+                                                              imageHeight: 200,
+                                                              imageAlt: 'A tall image',
+                                                              html: '<a href="https://ajaxcoding.id" class="btn btn-primary" target="_blank"><b>AjaxCoding</b></a><br/><br/><b>THR dapat dikirim pada nomor berikut:</b><br/>BRI: 7116-0101-8679-534<br/>BSI: 1042351454<br/>OVO/GoPay: 089691077371<br/><br/>Terima kasih<br/><br/><br/><br/><br/><p>Copyright© AjaxCoding. All right reserved.</p>'
+                                                            })
+                                                          }
+                                                        })
+                                                      }
+                                                    })
+                                                  }
+                                                })
+                                              }
+                                            })
+                                          }
+                                        })
+                                      }
+                                    })
+                                  }
+                                })
+                              }
+                            })
+                          }
+                        })
+                      }
+                    })
+                  }
+                })
+              }
+            })
+          }
+        })
+      }
+    })
+
+  }
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <meta name="description" content="Generated by create next app" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <>
+      <body>
+        <div className='container'>
+          <div className='d-flex mt-5 align-items-center justify-content-center'>
+            <a onClick={handleClick} className="animate__animated animate__flip btn btn-primary btn-lg active p-4" role="button" aria-pressed="true">Click Me</a>
+          </div>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
-    </div>
+      </body>
+    </>
   )
 }
 
